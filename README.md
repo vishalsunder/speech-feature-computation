@@ -5,7 +5,7 @@
 
 `dump.py` will save the speech signal as a `npz` array in the specified location
 
-`data.py` has the `SpeechDataset(torch.utils.data.Dataset)` class which computes logmels on the fly during training using the `.npz` files during training by using `torch.utils.data.DataLoader`. Feel free to modify for your training pipeline.
+`data.py` has the `SpeechDataset(torch.utils.data.Dataset)` class which computes logmels on the fly during training using the `.npz` files by using `torch.utils.data.DataLoader` with multiple processes. Feel free to modify for your training pipeline.
 
 Change the file paths in `dump.py` and `data.py`.
 
